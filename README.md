@@ -49,7 +49,7 @@ Change map entities by classname, name, or hammer id. Only for maps with map ent
 
 	"1"
 	{
-		"classname"		"func_tanktrain"
+		"classname"		"func_tracktrain"
 		"keyvalues"
 		{
 			"1"
