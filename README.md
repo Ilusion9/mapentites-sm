@@ -1,5 +1,5 @@
 # Description
-Change map entities by classname, name, or hammer id.
+Change map entities by classname, name, or hammer id. Only for maps with map entities size lower than 2 MB.
 - You can remove entities.
 - You can add / change / remove entity keyvalues.
 - You can add / remove entity outputs.
