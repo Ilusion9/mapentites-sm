@@ -8,83 +8,88 @@ Change map entities by classname, name, or hammer id.
 - Intmap (include-file) - https://github.com/Ilusion9/intmap-inc-sm
 
 # Examples
+## Remove entities
 ```
-	"Remove Entities"
+"Remove Entities"
+{
+	"1"
 	{
-		"1"
-		{
-			"classname"		"weapon_flashbang" // remove by classname
-		}
-		
-		"1"
-		{
-			"name"		"targetname" // remove by targetname
-		}
-    
-		"1"
-		{
-			"hammer"		"12345" // remove by hammer id
-		}
+		"classname"		"weapon_flashbang" // remove by classname
 	}
+
+	"1"
+	{
+		"name"		"targetname" // remove by targetname
+	}
+
+	"1"
+	{
+		"hammer"		"12345" // remove by hammer id
+	}
+}
 ```
 
+## Keyvalues
 ```
-	"Keyvalues"
+"Keyvalues"
+{
+	"1"
 	{
-		"1"
+		"classname"		"func_tanktrain"
+		"keyvalues"
 		{
-			"classname"		"func_tanktrain"
-			"keyvalues"
+			"1"
 			{
-				"1"
-				{
-					"key"			"spawnflags"
-					"value"			"514"
-					"add_flags"		"1" // add flags
-				}
-			}
-		}
-    
-		"1"
-		{
-			"classname"		"func_tanktrain"
-			"keyvalues"
-			{
-				"1"
-				{
-					"key"			"spawnflags"
-					"value"			"8"
-					"remove_flags"		"1" // remove flags
-				}
-			}
-		}
-    
-		"1"
-		{
-			"name"		"button38"
-			"keyvalues"
-			{
-				"1"
-				{
-					"key"			"wait"
-					"remove"		"1" // remove this keyvalue
-				}
-			}
-		}
-    
-		"1"
-		{
-			"hammer"		"555"
-			"keyvalues"
-			{
-				"1"
-				{
-					"key"			"wait"
-					"value"			"0" // the value will be replaced
-				}
+				"key"			"spawnflags"
+				"value"			"514"
+				"add_flags"		"1" // add flags
 			}
 		}
 	}
+
+	"1"
+	{
+		"classname"		"func_tanktrain"
+		"keyvalues"
+		{
+			"1"
+			{
+				"key"			"spawnflags"
+				"value"			"8"
+				"remove_flags"		"1" // remove flags
+			}
+		}
+	}
+
+	"1"
+	{
+		"name"		"button38"
+		"keyvalues"
+		{
+			"1"
+			{
+				"key"			"wait"
+				"remove"		"1" // remove this keyvalue
+			}
+		}
+	}
+
+	"1"
+	{
+		"hammer"		"555"
+		"keyvalues"
+		{
+			"1"
+			{
+				"key"			"wait"
+				"value"			"0" // the value will be replaced
+			}
+		}
+	}
+}
+```
+
+## Outputs
 ```
 	"Outputs"
 	{
@@ -108,3 +113,4 @@ Change map entities by classname, name, or hammer id.
 			}
 		}
 	}
+```
