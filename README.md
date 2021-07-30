@@ -67,7 +67,7 @@ Change map entities by classname, name, or hammer id.
 				"1"
 				{
 					"key"			"wait"
-					"remove"			"1" // remove this keyvalue
+					"remove"		"1" // remove this keyvalue
 				}
 			}
 		}
@@ -103,7 +103,7 @@ Change map entities by classname, name, or hammer id.
 				{
 					"key"			"OnPressed"
 					"value"			"button29:Kill::0:-1"
-					"remove"			"1" // remove this output
+					"remove"		"1" // remove this output
 				}
 			}
 		}
